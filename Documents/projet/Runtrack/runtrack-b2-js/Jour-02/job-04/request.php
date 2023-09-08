@@ -2,7 +2,7 @@
 
 function my_insert_student(string $email, string $fullname, string $genre, int $grade_id, DateTime $birthdate): bool {
 
-    $dsn = "mysql:host=host;dbname=lp_official.sql;charset=utf8";
+    $dsn = "mysql:host=host;dbname=lp_official;charset=utf8";
     $username = "your_username";
     $password = "your_password";
 
