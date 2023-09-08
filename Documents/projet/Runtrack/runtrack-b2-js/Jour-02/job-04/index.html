@@ -7,5 +7,40 @@
 </head>
 <body>
     <script src="script.js"></script>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire d'ajout d'étudiant</title>
+</head>
+<body>
+    <form id="form-add-student" onsubmit="myRegisterStudent(this); return false;">
+        <label for="student-mail">Email :</label>
+        <input type="email" id="student-mail" name="student-mail" required><br>
+
+        <label for="student-fullname">Nom complet :</label>
+        <input type="text" id="student-fullname" name="student-fullname" required><br>
+
+        <label for="student-gender">Genre :</label>
+        <select id="student-gender" name="student-gender" required>
+            <option value="male">Homme</option>
+            <option value="female">Femme</option>
+            <option value="other">Autre</option>
+        </select><br>
+
+        <label for="student-grade">Promo :</label>
+        <select id="student-grade" name="student-grade" required>
+            <option value="year1">Année 1</option>
+            <option value="year2">Année 2</option>
+            <option value="year3">Année 3</option>
+        </select><br>
+
+        <label for="student-birthdate">Date de naissance :</label>
+        <input type="date" id="student-birthdate" name="student-birthdate" required><br>
+
+        <input type="submit" id="submit-btn" value="Enregistrer">
+    </form>
+</body>
+</html>
+
 </body>
 </html>
